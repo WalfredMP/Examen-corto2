@@ -40,7 +40,6 @@ h1 {
   flex-basis: 200px;
   background-color: #1d262a;
   padding: 15px;
-  border-right: 1px solid #64B5F6;
 }
 
 .chat-details {
@@ -109,9 +108,29 @@ h1 {
 
 .user-input {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px solid #999;
+}
+
+.icons {
+  display: flex;
+  margin-right: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background-color: #999;
+}
+
+.input-container {
+  display: flex;
   align-items: center;
-  padding: 10px;
-  background-color: #1e1e1e;
+  width: 100%;
 }
 
 input[type="text"] {
@@ -121,11 +140,11 @@ input[type="text"] {
   border-radius: 5px;
   outline: none;
   background-color: #1e1e1e;
+  margin-right: 10px;
 }
 
 button {
   padding: 10px 20px;
-  margin-left: 10px;
   background-color: #2196F3;
   color: #ccc;
   border: none;
